@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Giftastic Animals</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/simplex/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Giftastic Animals</h1>
+            <h3>Gifs of your favorite animals</h3>
+        </header>
+        <hr>
+        <div class="row">
+            <h4>Click on a button to view gifs of that animal.</h4>
+        </div>
+        <div class="row" id="animal-buttons">
+        </div>
+        <div class="alert alert-dismissible alert-danger fade in" style="display: none;">
+            <button type="button" class="close" data-dismiss="alert" aria-label="close">&times;</button>
+            <strong>Oh snap!</strong> You already added this animal to the list.
+        </div>
+        <div class="row">
+            <div class="col-md-8" id="gif-section">
+                <div class="row" id="animal-header">
+                    <h2>Gifs</h2>
+                </div>
+                <div class="row" id="animal-gifs"></div>
+            </div>
+            <div class="col-md-4" id="submit-section">
+                <form action="" id="animal-form">
+                    <h2>Add an animal here:</h2>
+                    <p>Type in an animal name and click submit. An animal cannot be added more than once. Remember to click on the new button above to view gifs.</p>
+                    <label for="animal-input">Animal name:</label>
+                    <input type="text" id="animal-input">
+                    </br>
+                    <input type="submit" id="add-animal" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

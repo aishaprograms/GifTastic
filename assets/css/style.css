@@ -1,0 +1,17 @@
+.animal-btn {
+    margin: 5px;
+}
+
+.animal-img {
+    cursor: pointer;
+    display: block;
+    margin: 10px;
+}
+
+.img-div {
+    float: left;
+}
+
+#animal-gifs {
+    clear: both;
+}
