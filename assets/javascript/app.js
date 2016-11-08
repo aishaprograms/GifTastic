@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     $(document).on('click', '.animal-btn', function() {
         $('#animal-gifs').html('');
-        var queryURL = 'http://api.giphy.com/v1/gifs/search?';
+        var queryURL = 'https://api.giphy.com/v1/gifs/search?';
         var searchTerm = 'q=' + $(this).data('animal');
         var limitSearch = '&limit=10';
         var rating = '&rating=g&pg';
