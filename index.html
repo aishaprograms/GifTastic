@@ -18,13 +18,16 @@
         <div class="row">
             <h4>Click on a button to view gifs of that animal.</h4>
         </div>
+        <!-- Dynamically created buttons will go in this div -->
         <div class="row" id="animal-buttons">
         </div>
+        <!-- This alert pops up if the button was already added to the page, avoiding duplicates -->
         <div class="alert alert-dismissible alert-danger fade in" style="display: none;">
-            <button type="button" class="close" data-dismiss="alert" aria-label="close">&times;</button>
+            <button type="button" class="close" data-dismiss="alert" aria-label="close" id="close-alert-button">&times;</button>
             <strong>Oh snap!</strong> You already added this animal to the list.
         </div>
         <div class="row">
+            <!-- //dynamically created gifs will go in this area -->
             <div class="col-md-8" id="gif-section">
                 <div class="row" id="animal-header">
                     <h2>Gifs</h2>
@@ -32,6 +35,7 @@
                 <div class="row" id="animal-gifs"></div>
             </div>
             <div class="col-md-4" id="submit-section">
+                <!-- this is a form for the user to make any new buttons -->
                 <form action="" id="animal-form">
                     <h2>Add an animal here:</h2>
                     <p>Type in an animal name and click submit. An animal cannot be added more than once. Remember to click on the new button above to view gifs.</p>
